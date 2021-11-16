@@ -2,8 +2,10 @@
  
 ## Prerequisites
 
-1.Create Discord bot with Adminstrator and presence permmisions 
+1.Create Discord bot with Adminstrator and presence permmisions
+
 2.Copy and paste bot token to ./monitoring-app/settings.json
+
 3.Install docker
 
 ## How to run
