@@ -24,3 +24,5 @@ Access exposed metrics at localhost:8080/metrics, prometheus at localhost:9090 a
 2. Add tracking of user playing activity using Discord presnece
 
 3. Track for how long activity state goes unchanged 
+
+4. Add a cron job to post metrics to a discord channel
