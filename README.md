@@ -15,4 +15,4 @@ docker-compose up
 ```
 from root of the directory or anywhere idgaf i am not your dad
 
-Access exposed metrics at localhost:8080, prometheus at localhost:9090 and grafana at localhost:3000
+Access exposed metrics at localhost:8080/metrics, prometheus at localhost:9090 and grafana at localhost:3000
