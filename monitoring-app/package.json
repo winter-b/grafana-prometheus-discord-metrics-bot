@@ -1,8 +1,8 @@
 {
   "name": "monitoring-app",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node bot.js"
   },
   "dependencies": {
     "discord.js": "^13.3.1",

@@ -14,7 +14,7 @@ FROM node:17-alpine3.12
 RUN mkdir /app
 WORKDIR /app
 
-COPY index.js /app
+COPY bot.js /app
 
 COPY --from=installer /app/package.json .
 COPY --from=installer /app/settings.json .
