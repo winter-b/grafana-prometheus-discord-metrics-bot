@@ -37,7 +37,15 @@ discordClient.once('ready', () => {
 discordClient.on('ready', () => {
     const list = discordClient.guilds.cache.get(settings.Discord_guild_id);
     list.members.cache.each(member => {
-        resetGauges_to_offline(member.user.username);
+        if (member.presence != null) {
+            gauge.labels(member.presence.status, member.user.username).set(1);
+            if(member.presence.activities.length > 0) {
+                game_gauge.labels({activity: member.presence.activities[0], name: member.user.username}).set(1);
+            }
+        }
+        else{
+            resetGauges_to_offline(member.user.username);
+        }
     });
     register.registerMetric(gauge);
     register.registerMetric(game_gauge);
